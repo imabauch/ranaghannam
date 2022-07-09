@@ -80,12 +80,26 @@ p {line-height: 2}
   .text {font-size: 11px}
 }
 
-.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+.bgimg2 {background-image: url("https://aminagrebi.w3spaces.com/images/photo_2022-07-08_00-09-32.jpg")}
 
+#logo{ 
+
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} 
+
+.purple {
+
+background-color:#EEE4F2
+}
 
 </style>
 </head>
-<body>
+<body onmousedown="return false" onselectstart="return false">
+<div id="logo"> 
+	<img src=""> 
+</div> 
 
 <!-- Header / Home-->
 
@@ -120,7 +134,7 @@ p {line-height: 2}
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+  <div class="w3-bar w3-white w3-center w3-padding ">
     <a href="#home" style="width:25%" class="w3-bar-item w3-button">تواصل معي</a>
     <a href="#us" style="width:25%" class="w3-bar-item w3-button">المدونة</a>
     <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">نبذة تعريفية عني</a>
@@ -129,7 +143,7 @@ p {line-height: 2}
 </div>
 
 <!-- About / Jane And John -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+<div class="w3-container w3-padding-64 purple " id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>نبذة تعريفية عني</b></h1>
     <img class="w3-round w3-grayscale-min" src="https://aminagrebi.w3spaces.com/images/photo_2021-12-21_23-00-53.jpg" style="width:100%;margin:32px 0">
@@ -149,7 +163,7 @@ p {line-height: 2}
 </div>
 
 <!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+<div class="w3-container w3-padding-64 purple w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
     <h1 class="w3-text-grey"></b></h1>
 
@@ -157,7 +171,7 @@ p {line-height: 2}
   </div>
 
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+<div class="w3-container w3-padding-64 purple w3-center w3-wide" id="rsvp">
 <h1>التواصل معي</h1>
    
     
@@ -217,7 +231,8 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-<h3></h3><!-- Start BawkBox Code--><script data-sil-id="62c60e24e431f8001edd964f">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/customer-chat/62c60e24e431f8001edd964f?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-customer-chat sil-widget" id="sil-widget-62c60e24e431f8001edd964f"><a href="//bawkbox.com/install/customer-chat">Customer Chat</a></div><!-- End BawkBox Code-->
+
 
 </body>
 </html>
+
