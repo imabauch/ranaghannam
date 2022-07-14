@@ -12,6 +12,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+<!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+		
 <style>
 body,h1,h2{font-family: 'Cairo', sans-serif;}
 body, html {height: 100%}
@@ -97,29 +104,60 @@ background-color:#EEE4F2
 <!DOCTYPE html>
 <ht
 </style>
-<body>
+<<body onmousedown="return false" onselectstart="return false">
+ <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">أكاديمية شمس التمام للتدريب والتطوير</a>
 
-<div class="icon-bar">
-  <a href="https://www.facebook.com/rana.hannam" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="https://twitter.com/RanaSalmanGhan1" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="https://ar.quora.com/profile/Rana-Salman-Ghannam" class="quora"><i class="fa fa-quora"></i></a> 
-  <a href="https://www.linkedin.com/in/rana-salman-ghannam-b0a91b215/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.youtube.com/channel/UC5AN91ButFQ7Pa3XwKi0S_w" class="youtube"><i class="fa fa-youtube"></i></a> 
-</div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">الصفحة الرئيسية</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#us" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">نبذة تعريفية عني</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">تعريف الاكاديمية</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#wedding" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon'></i>
+                                <span class="nav__name">المدونة</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail nav__icon'></i>
+                                <span class="nav__name">التواصل معي</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="assets/img/perfil.png" alt="" class="nav__img">
+            </nav>
+        </header>
 
 
-</body>
-</html>
-</style>
-</head>
-<body onmousedown="return false" onselectstart="return false">
-<div id="logo"> 
-	<img src=""> 
-</div> 
 
 <!-- Header / Home-->
 
-<div class="slideshow-container">
+<div class="slideshow-container" id=home>
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
@@ -148,18 +186,8 @@ background-color:#EEE4F2
   <span class="dot"></span> 
 </div>
 
-<!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding ">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">تواصل معي</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">المدونة</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">نبذة تعريفية عني</a>
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-black">الصفحة الريسية</a>
-  </div>
-</div>
-
 <!-- About / Jane And John -->
-<div class="w3-container w3-padding-64 purple " id="us">
+<div class="w3-container w3-padding-64 purple " id="us" >
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>نبذة تعريفية عني</b></h1>
     <img class="w3-round w3-grayscale-min" src="https://aminagrebi.w3spaces.com/images/photo_2021-12-21_23-00-53.jpg" style="width:100%;margin:32px 0">
@@ -188,33 +216,13 @@ background-color:#EEE4F2
 
 <!-- RSVP section -->
 <div class="w3-container w3-padding-64 purple w3-center w3-wide" id="rsvp">
-<h1>التواصل معي</h1>
+<h1 id="contact">التواصل معي</h1>
    
     
     <!-- Start BawkBox Code--><script data-sil-id="62c7146ee431f8001eddd8f7">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/contact/62c7146ee431f8001eddd8f7?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-contact sil-widget" id="sil-widget-62c7146ee431f8001eddd8f7"><a href="//bawkbox.com/install/contact">Contact Box</a></div><!-- End BawkBox Code-->
 </div>
 
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-    <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
-      <p>We really hope you can make it.</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-      </form>
-      <p><i>Sincerely, John & Jane</i></p>
-      <div class="w3-row">
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-        </div>
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 <!-- Footer -->
@@ -247,7 +255,9 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+
