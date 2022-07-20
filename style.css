@@ -7,15 +7,7 @@ body, html {height: 100%}
 
 p {line-height: 2}
 
-.bgimg, .bgimg2 {
 
-  min-height: 50%;
-
-  background-position: center;
-
-  background-size: cover;
-
-}
 
 /* Slideshow container */
 
