@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Update</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="autoUpdate.js"></script>
+
+</head>
+
+<body>
+<div id="liveData">
+    <p>Loading Data...</p>
+</div>
+
+<audio id="audio">
+	<source  id="sound" src="ياني.mp3" type="audio/mp3">
+</audio>
+
+<p id="demo" style="display:none;"></p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+
+
+<script>
+
+window.addEventListener('load', function()
+{
+    var xhr = null;
+	
+	var x = document.getElementById("audio"); 
+
+    getXmlHttpRequestObject = function()
+    {
+        if(!xhr)
+        {               
+            // Create a new XMLHttpRequest object 
+            xhr = new XMLHttpRequest();
+        }
+        return xhr;
+    };
+
+    updateLiveData = function()
+    {
+        var now = new Date();
+        // Date string is appended as a query with live data 
+        // for not to use the cached version 
+        var url = 'r2s1.php?' + now.getTime();
+        xhr = getXmlHttpRequestObject();
+        xhr.onreadystatechange = evenHandler;
+        // asynchronous requests
+        xhr.open("GET", url, true);
+        // Send the request over the network
+        xhr.send(null);
+    };
+
+    function evenHandler()
+    {
+        // Check response is ready or not
+        if(xhr.readyState == 4 && xhr.status == 200)
+        {
+
+
+            dataDiv = document.getElementById('liveData');
+            // Set current data text
+            dataDiv.innerHTML = xhr.responseText;
+			var xx=xhr.responseText;
+			//alert(xx);
+			if(xx==1){
+				//alert('1 is ok');	
+				//x.play();
+				//playAudio();        
+				x.play();
+
+				var y = document.getElementById("audio").duration;
+				y=(y*1000);
+				console.log(y);
+				document.getElementById("demo").innerHTML = y;
+				document.getElementById("p1").style.display = "block";
+				document.getElementById("p2").style.display = "none";
+				setTimeout(function(){ document.getElementById("p1").style.display = "none"; document.getElementById("p2").style.display = "block";}, y);
+			  
+				const Http = new XMLHttpRequest();
+				Http.open("GET","https://s-m.com.sa/r2/r2m2.php");
+				Http.send();		
+			}
+
+			document.getElementById("sound").src=xhr.responseText;
+            // Update the live data every 1 sec
+            setTimeout(updateLiveData(), 10000);
+        }
+    }
+	
+	
+});
+var x = document.getElementById("audio"); 
+
+function playAudio() { 
+  x.play(); 
+  var y = document.getElementById("audio").duration;
+  y=y*1000;
+  document.getElementById("demo").innerHTML = y;
+  document.getElementById("p1").style.display = "block";
+  document.getElementById("p2").style.display = "none";
+  setTimeout(function(){ document.getElementById("p1").style.display = "none"; document.getElementById("p2").style.display = "block";}, y);
+} 
+
+
+</script>
+<div align="center">
+<br>
+
+	<img id="p2" src="blnk.gif" style="width:900px" >
+	<img id="p1" src="talk.gif" style="width:900px; display:none;" >
+
+    <p><span id="action"></span></p>
+    <div id="output" class="hide"></div>
+
+</div>
+</body>
+</html>
+
+
