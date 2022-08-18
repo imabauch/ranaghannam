@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+
+    <script src="script.js"></script>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="speech to text arabic, voice to text arabic, arabic speech to text, arabic voice to text, arabic speech text." />
+    <meta name="author" content="SpeakTyping" />
+    <meta name="description" content="Arabic speech to text or voice to text allows you to convert your voice note and audio file into Arabic text. It is voice into text typing tool in which you only have to speak words and your voice convert in to text." />
+    <title>speech to text arabic | voice to text arabic | arabic speech to text</title>
+
+    <link href="/Content/css/content.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function do_nothing() { return; }
+    </script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald, &display=swap" rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <link href="/Content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/js/js-jquery.min.js"></script>
+    <script type="text/javascript" src="/Content/js/js-bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#navr').prepend('<div id="menu-icon">Menu</div>');
+            $("#menu-icon").on("click", function () {
+                $("#nav").slideToggle();
+                $("#search").slideToggle();
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2EQTPKHSP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2EQTPKHSP');
+    </script>
+
+    <link rel="stylesheet" href="/Content/css/bootstrap.min.css" type="text/css" />
+    <script data-ad-client="ca-pub-6503832583613828" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+ <script>
+                                            (function (e, p) {
+                                                var m = location.href.match(/platform=(win8|win|mac|linux|cros)/);
+                                                e.id = (m && m[1]) ||
+                                                    (p.indexOf('Windows NT 6.2') > -1 ? 'win8' : p.indexOf('Windows') > -1 ? 'win' : p.indexOf('Mac') > -1 ? 'mac' : p.indexOf('CrOS') > -1 ? 'cros' : 'linux');
+                                                e.className = e.className.replace(/\bno-js\b/, 'js');
+                                            })(document.documentElement, window.navigator.userAgent)
+                                        </script>
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" charset="utf-8"></script>
+                                        <meta charset="utf-8">
+                                        <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+                                        <style>
+                                            #info {
+                                                font-size: 20px;
+                                            }
+
+                                            #div_start {
+                                                float: left;
+                                                position: relative;
+                                                left: 43%;
+                                            }
+
+                                            @media screen and (max-width: 480px) {
+                                                #div_start {
+                                                    float: left;
+                                                    position: relative;
+                                                    left: 33%;
+                                                }
+                                            }
+
+                                            #headline {
+                                                text-decoration: none
+                                            }
+
+                                            #results {
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                border: 2px solid #f97fbd;
+                                                padding: 5px 5px 5px 5px;
+                                                padding: 25px;
+                                                text-align: left;
+                                            }
+
+                                            #start_button {
+                                                border: 0;
+                                                background-color: transparent;
+                                                padding: 0;
+                                                background-color: #f7f7e9;
+                                                border-radius: 30px;
+                                            }
+
+                                            .interim {
+                                                color: gray;
+                                            }
+
+                                            .final {
+                                                color: black;
+                                                padding-right: 3px;
+                                            }
+
+                                            buttons {
+                                                display: none;
+                                            }
+
+                                            .marquee {
+                                                margin: 20px auto;
+                                            }
+
+                                            #buttons {
+                                                margin: 10px 0;
+                                                position: relative;
+                                                top: -50px;
+                                            }
+
+                                            #copy {
+                                                margin-top: 0px;
+                                            }
+
+                                                #copy > div {
+                                                    display: none;
+                                                    margin: 0 70px;
+                                                }
+
+                                            a.c1 {
+                                                font-weight: normal;
+                                            }
+
+                                            #my_button td {
+                                                height: 30px !important;
+                                            }
+                                        </style>
+                                    </head>
+                                    <body class="" id="grid">
+                                        <br />
+                                        <center>
+                                            <div id="div_start">
+                                                <button id="start_button" onclick="startButton(event)"><img alt="Start" style="width:90px; height:100px;" id="start_img" src="images/Mic-Static.png"></button>
+                                            </div><br>
+                                            <br><br>
+                                            <div class="browser-landing" id="main">
+
+                                                <div class="compact marquee">
+                                                    <div id="info">
+                                                        <p style="font-family:cambria; font-size:21px;" id="info_start">
+                                                            Click on the microphone icon and begin speaking for as long as you like. <br><br>
+                                                        </p>
+                                                        <p style="font-family:cambria; font-size:21px;" id="info_speak_now" style="display:none">
+                                                            Speak now.<br><br>
+                                                        </p>
+                                                        <p id="info_no_speech" style="display:none">
+                                                            No speech was detected. You may need to adjust your microphone settings.
+                                                        </p>
+                                                        <p id="info_no_microphone" style="display:none">
+                                                            No microphone was found. Ensure that a microphone is installed and that microphone settings are configured correctly.
+                                                        </p>
+                                                        <p id="info_allow" style="display:none">
+                                                            Click the "Allow" button above to enable your microphone.
+                                                        </p>
+                                                        <p id="info_denied" style="display:none">
+                                                            Permission to use microphone was denied.
+                                                        </p>
+                                                        <p id="info_blocked" style="display:none">
+                                                            Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream
+                                                        </p>
+                                                        <p id="info_upgrade" style="display:none">
+                                                            Speech Recognition is not supported by this browser. Upgrade to <a href="//www.google.com/chrome" target="_blank">Chrome</a> version 25 or later.
+                                                        </p>
+                                                    </div>
+
+                                                    <div id="results" oncanplaythrough="playf();">
+                                                        <span class="final" id="final_span" name="final_span"></span> <span class="interim" id="interim_span"></span>
+                                                    </div><br>
+                                                    <table id="my_button2" style="visibility:visible;">
+                                                        <tr style='text-align:center;color:#FFFFFF;font-size:17px;'>
+                                                            <td class="Buttoncolor"> Total Words: <span id="wordCount">0</span></td>
+                                                            <td class="Buttoncolor"> Total Characters: <span id="totalChars">0</span></td>
+                                                            <td class="Buttoncolor"> Characters (Excluding Spaces): <span id="charCountNoSpace">0</span></td>
+                                                        </tr>
+                                                    </table><br />
+                                                    <table id="my_button" style="visibility:visible;" border="0">
+                                                        <tr style='text-align:center; color:#FFFFFF; font-size:17px;'>
+                                                            <td onclick="value_added()" colspan="2" class="WhatsappBtn">
+                                                                <span alt="Whatsapp" title="Whatsapp">
+                                                                    <a id="url_link" rel="nofollow noopener" target="_blank">
+                                                                        <table width="90px" height="20px" align="left">
+                                                                            <tr>
+                                                                                <td style="color:#fff; text-decoration:none; text-align:left;">&nbsp; Share</td>
+                                                                                <td><img data-shadow="none" data-shadow-direction="bottom" class="img-with-animation  animated-in" data-delay="0" style="margin-left:-43px; height: 25px; margin-bottom: 5px; width: 25px;" data-animation="none" src="images/what.png" alt="WhatsApp Share Button" /></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </a>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <div id="copy">
+                                                                    <button class="button" id="copy_button" onclick="copyButton()"> Copy </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <button class='button' id="print_button" type="button" name="Print" onclick="printTextArea()" value="Print">Print <span class=" glyphicon glyphicon-print"></span></button>
+                                                                <input class='button' id="reset_button" type="button" value="Reset" onClick="myFunction6()" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div style="display:none;" id="copy_info">
+                                                        <p>
+                                                            Press Control-C to copy text.
+                                                        </p>
+                                                        <p>
+                                                            (Command-C on Mac.)
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="compact marquee" id="div_language">
+                                                        <select id="select_language" style="padding:5px 5px 5px 5px;" onchange="updateCountry()"> </select>&nbsp;&nbsp;
+                                                        <select id="select_dialect">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503832583613828"
+                                                    crossorigin="anonymous"></script>
+                                            <ins class="adsbygoogle"
+                                                 style="display:block"
+                                                 data-ad-format="autorelaxed"
+                                                 data-ad-client="ca-pub-6503832583613828"
+                                                 data-ad-slot="3719409075"></ins>
+                                            <script>
+                                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                            </script>
+                                        </center>
+                                    </body>
+                                </html>
+                                <script src="/Content/js/js-min.js"></script>
+                                <script>
+                                    var langs =
+                                        [['عربى', ['ar-DZ', 'Algeria'],
+                                            ['ar-BH', 'Bahrain'],
+                                            ['ar-TD', 'Chad'],
+                                            ['ar-KM', 'Comoros'],
+                                            ['ar-DJ', 'Djibouti'],
+                                            ['ar-EG', 'Egypt'],
+                                            ['ar-IQ', 'Iraq'],
+                                            ['ar-JO', 'Jordan'],
+                                            ['ar-KW', 'Kuwait'],
+                                            ['ar-LB', 'Lebanon'],
+                                            ['ar-LY', 'Libya'],
+                                            ['ar-MR', 'Mauritania'],
+                                            ['ar-MA', 'Morocco'],
+                                            ['ar-OM', 'Oman'],
+                                            ['ar-PS', 'State of Palestine'],
+                                            ['ar-QA', 'Qatar'],
+                                            ['ar-SA', 'Saudi Arabia'],
+                                            ['ar-SO', 'Somalia'],
+                                            ['ar-SD', 'Sudan'],
+                                            ['ar-SY', 'Syria'],
+                                            ['ar-AE', 'United Arab Emirates'],
+                                            ['ar-YE', 'Yemen'],
+                                            ['ar-TN', 'Tunisia']],];
+
+
+                                    for (var i = 0; i < langs.length; i++) {
+                                        select_language.options[i] = new Option(langs[i][0], i);
+                                    }
+                                    select_language.selectedIndex = 0;
+                                    updateCountry();
+                                    select_dialect.selectedIndex = 0;
+                                    showInfo('info_start');
+
+                                    function updateCountry() {
+                                        for (var i = select_dialect.options.length - 1; i >= 0; i--) {
+                                            select_dialect.remove(i);
+                                        }
+                                        var list = langs[select_language.selectedIndex];
+                                        for (var i = 1; i < list.length; i++) {
+                                            select_dialect.options.add(new Option(list[i][1], list[i][0]));
+                                        }
+                                        select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
+                                    }
+
+                                    var create_email = false;
+                                    var final_transcript = '';
+                                    var recognizing = false;
+                                    var ignore_onend;
+                                    var start_timestamp;
+                                    if (!('webkitSpeechRecognition' in window)) {
+                                        upgrade();
+                                    } else {
+                                        start_button.style.display = 'inline-block';
+                                        var recognition = new webkitSpeechRecognition();
+                                        recognition.continuous = true;
+                                        recognition.interimResults = true;
+
+                                        recognition.onstart = function () {
+                                            recognizing = true;
+                                            showInfo('info_speak_now');
+                                            start_img.src = "images/Mic2.gif";
+                                        };
+
+                                        recognition.onerror = function (event) {
+                                            if (event.error == 'no-speech') {
+                                                start_img.src = 'images/Mic-Static.png';
+                                                showInfo('info_no_speech');
+                                                ignore_onend = true;
+                                            }
+                                            if (event.error == 'audio-capture') {
+                                                start_img.src = 'images/Mic-Static.png';
+                                                showInfo('info_no_microphone');
+                                                ignore_onend = true;
+                                            }
+                                            if (event.error == 'not-allowed') {
+                                                if (event.timeStamp - start_timestamp < 100) {
+                                                    showInfo('info_blocked');
+                                                } else {
+                                                    showInfo('info_denied');
+                                                }
+                                                ignore_onend = true;
+                                            }
+                                        };
+
+                                        recognition.onend = function () {
+                                            recognizing = false;
+                                            if (ignore_onend) {
+                                                return;
+                                            }
+                                            start_img.src = 'images/Mic-Static.png';
+                                            if (!final_transcript) {
+                                                showInfo('info_start');
+                                                return;
+                                            }
+                                            showInfo('');
+                                            if (window.getSelection) {
+                                                window.getSelection().removeAllRanges();
+                                                var range = document.createRange();
+                                                range.selectNode(document.getElementById('final_span'));
+                                                window.getSelection().addRange(range);
+                                            }
+                                            if (create_email) {
+                                                create_email = false;
+                                                createEmail();
+                                            }
+                                        };
+
+                                        recognition.onresult = function (event) {
+                                            var interim_transcript = '';
+                                            if (typeof (event.results) == 'undefined') {
+                                                recognition.onend = null;
+                                                recognition.stop();
+                                                upgrade();
+                                                return;
+                                            }
+                                            for (var i = event.resultIndex; i < event.results.length; ++i) {
+                                                if (event.results[i].isFinal) {
+                                                    final_transcript += event.results[i][0].transcript;
+                                                } else {
+                                                    interim_transcript += event.results[i][0].transcript;
+                                                }
+                                            }
+                                            final_transcript = capitalize(final_transcript);
+                                            final_span.innerHTML = linebreak(final_transcript);
+                                            interim_span.innerHTML = linebreak(interim_transcript);
+                                            if (final_transcript || interim_transcript) {
+                                                showButtons('inline-block');
+                                            }
+                                        };
+                                    }
+
+                                    function upgrade() {
+                                        start_button.style.visibility = 'hidden';
+                                        alert("upgrade");
+                                        showInfo('info_upgrade');
+                                    }
+
+                                    var two_line = /\n\n/g;
+                                    var one_line = /\n/g;
+                                    function linebreak(s) {
+                                        return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+                                    }
+
+                                    var first_char = /\S/;
+                                    function capitalize(s) {
+                                        return s.replace(first_char, function (m) { return m.toUpperCase(); });
+                                    }
+
+                                    function copyButton() {
+                                        if (recognizing) {
+                                            recognizing = false;
+                                            recognition.stop();
+                                        }
+                                        copy_info.style.display = 'inline-block';
+                                        showInfo('');
+                                    }
+
+                                    function startButton(event) {
+                                        if (recognizing) {
+                                            recognition.stop();
+                                            return;
+                                        }
+                                        final_transcript = '';
+                                        recognition.lang = select_dialect.value;
+                                        recognition.start();
+                                        ignore_onend = false;
+                                        final_span.innerHTML = '';
+                                        interim_span.innerHTML = '';
+                                        start_img.src = 'images/Mic-Stop1.png';
+                                        showInfo('info_allow');
+                                        showButtons('none');
+                                        start_timestamp = event.timeStamp;
+                                    }
+
+                                    function showInfo(s) {
+                                        if (s) {
+                                            for (var child = info.firstChild; child; child = child.nextSibling) {
+                                                if (child.style) {
+                                                    child.style.display = child.id == s ? 'inline' : 'none';
+                                                }
+                                            }
+                                            info.style.visibility = 'visible';
+                                        } else {
+                                            info.style.visibility = 'hidden';
+                                        }
+                                    }
+
+                                    var current_style;
+                                    function showButtons(style) {
+                                        if (style == current_style) {
+                                            return;
+                                        }
+                                        counter();
+                                    }
+
+
+                                    function myFunction() {
+
+                                        data = final_transcript;
+                                        $("#data").val(data);
+                                        $("#my-form").submit();
+                                    }
+
+                                    //Reset Result
+                                    function myFunction6() {
+                                        document.getElementById("results").innerHTML = '';
+                                        //document.getElementById("data").focus();
+                                        document.getElementById('charCountNoSpace').innerHTML = 0;
+                                        document.getElementById('wordCount').innerHTML = 0;
+                                        document.getElementById('totalChars').innerHTML = 0;
+                                        document.getElementById('charCount').innerHTML = 0;
+                                    }
+
+                                    function counter() {
+                                        document.getElementById('my_button').style.visibility = "visible";
+                                        document.getElementById('my_button2').style.visibility = "visible";
+
+                                        var value = final_transcript;
+                                        if (value.length == 0) {
+                                            document.getElementById('wordCount').innerHTML = 0;
+                                            document.getElementById('totalChars').innerHTML = 0;
+                                            document.getElementById('charCount').innerHTML = 0;
+                                            document.getElementById('charCountNoSpace').innerHTML = 0;
+                                            return;
+                                        }
+
+                                        var regex = /\s+/gi;
+                                        var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+                                        var totalChars = value.length;
+                                        var charCount = value.trim().length;
+                                        var charCountNoSpace = value.replace(regex, '').length;
+                                        document.getElementById('charCountNoSpace').innerHTML = charCountNoSpace;
+                                        document.getElementById('wordCount').innerHTML = wordCount;
+                                        document.getElementById('totalChars').innerHTML = totalChars;
+                                        document.getElementById('charCount').innerHTML = charCount;
+
+                                    }
+
+                                    function printTextArea() {
+                                        childWindow = window.open('', 'childWindow', 'location=yes, menubar=yes, toolbar=yes');
+                                        childWindow.document.open();
+                                        childWindow.document.write('<html><head></head><body>');
+                                        childWindow.document.write(final_transcript);
+                                        childWindow.document.write('</body></html>');
+                                        childWindow.print();
+                                        childWindow.document.close();
+                                        childWindow.close();
+                                    }
+                                    //Whatsapp
+                                    function value_added() {
+                                        var send_content = final_transcript;
+                                        if (send_content !== '') {
+                                            var url_link = '';
+                                            var url = "https://web.whatsapp.com/send?text=" + send_content + url_link;
+                                            document.getElementById('url_link').setAttribute("href", url);
+                                        }
+                                        //else{ alert("Please speaking first."); }
+                                    }
+
+                                </script>
+ 
+
+                    <div id="rightbar-w" class="span3">
+                        <div id="sidebar">
+                            <div class="module  ">
+                                <div class="module-body">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6503832583613828"
+                                            crossorigin="anonymous"></script>
+                                    <!-- Vertical 6 -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-6503832583613828"
+                                         data-ad-slot="1750956943"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div id="footer-w">
+    <div id="footer">
+        <span>© 2022 Copyright DALIA AHMED All right reserved</span>
+        <div class="clr"></div>
+    </div>
+</div>
+
+
+</body>
+
+        <hr />
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
