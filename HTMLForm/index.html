@@ -12,14 +12,20 @@
       <hr>
       <!--Add your code below-->
        
-      <form>
-        <h1>Login to start creating a burger!</h1>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username">
-        <br>
-        <label for="user-pw">Password:</label>
-        <!--Add your code below-->
-        <input type="password" id="user-pw" name="user-pw">
+<form>
+        <h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+          <input type="text" name="patty" id="patty" value="beef">
+        </section>
+        <hr>
+
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <!--Add your code below-->
+          <input id="amount" type="number" step="1" name="amount">
+          
+        </section>
       </form>
     </section>
   </body>
